@@ -1,9 +1,25 @@
 <template>
-	<div class="app">
-		Hello world!
+	<MainContainer>
+		<SideBar />
+		<TopHeader />
 		<router-view/>
-	</div>
+	</MainContainer>
 </template>
+
+<script>
+	import MainContainer from "./components/Layouts/MainContainer"
+	import SideBar from "./components/SideBar"
+	import TopHeader from "./components/TopHeader"
+
+	export default {
+		name: 'App',
+		components: {
+			MainContainer,
+			SideBar,
+			TopHeader,
+		}
+	}
+</script>
 
 <style scoped>
 
